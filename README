@@ -1,0 +1,17 @@
+# Notes-Maria-Db
+
+Simple containerized mariadb database to hold notes records.
+This repository uses the [MariaDb Docker Image](https://hub.docker.com/_/mariadb) 
+
+### Extending the base Db
+
+To add additional tables or procedures, just create the script and save it in the 
+base folder. During the build process, the scripts located in this folder will be executed 
+against the notes-db database.
+
+### Adding changes in local environment
+
+You can execute `make bulid` in the repo root directory to build the image and test the 
+changes done in local environment before pushing changes to the remote repository.
+
+Don't forget to check the [MariaDb Docker Image](https://hub.docker.com/_/mariadb) for additional details.
